@@ -34,6 +34,12 @@ vim.opt.signcolumn = "yes"
 
 --numero minimo di righe che fa vedere sopra e sotto il cursore
 vim.opt.scrolloff = 8
+
+--python provider
+vim.g.python3_host_prog = '/Users/luca/anaconda3/bin/python3'
+
+--conceallevel for viewing markdown files
+vim.opt.conceallevel = 2
 --------------------------------------------------- PLUGINS ---------------------------------------------------
 
 --lazy e tutti i plug-in
@@ -49,7 +55,7 @@ require("config.telescope")
 require("config.keymaps")
 
 --python LSP
-require("config.python")
+--require("config.python")
 
 --cmp
-require("config.cmp")
+--require("config.cmp")

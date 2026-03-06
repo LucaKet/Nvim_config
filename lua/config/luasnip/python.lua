@@ -7,10 +7,19 @@ vim.list_extend(snipetts, {
       [[
       import numpy as np 
       import matplotlib.pyplot as plt 
-      import math
+      plt.ion()
       import kwant
+
+      <>
+
+
+      def main():
+          return 0
+
+      if __name__ == '__main__':
+          main()
       ]],
-      {}
+      {i(1)}
       )
       ),
   }

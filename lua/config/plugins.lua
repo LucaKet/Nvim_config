@@ -19,9 +19,33 @@ vim.opt.rtp:prepend(lazypath)
 
 local opts = {}
 local plugins = {
-  --kanagawa (colorscheme)
+--kanagawa (colorscheme)
+--  {
+--    "rebelot/kanagawa.nvim"
+--  },
+--
+--  tokyonight colorscheme
+--  {
+--    "folke/tokyonight.nvim",
+--    lazy = false,
+--    priority = 1000,
+--  },
+--
+--  monochrome colorscheme
+--  {
+--  "slugbyte/lackluster.nvim",
+--    lazy = false,
+--    priority = 1000,
+--    init = function()
+--        vim.cmd.colorscheme("lackluster")
+        -- vim.cmd.colorscheme("lackluster-hack") -- my favorite
+        -- vim.cmd.colorscheme("lackluster-mint")
+--    end, 
+ -- },
+ --other monochrome colorscheme
   {
-    "rebelot/kanagawa.nvim"
+    "kungfusheep/mfd.nvim"
+
   },
 
   --telescope
@@ -33,7 +57,7 @@ local plugins = {
   { 'nvim-mini/mini.statusline', version = false, opts = {} }, 
   { 'nvim-mini/mini.icons', version = false, opts = {} },
  
---Oil (file manager)
+  --Oil (file manager)
   {
     require("config.plugins.Oil")
   },
@@ -43,9 +67,9 @@ local plugins = {
     require("config.plugins.treesitter")
   },
 
-    --render markdown
+  --render markdown
   {
-    require("config.plugins.render_markdown")
+   require("config.plugins.render_markdown")
   },
 
   {
@@ -56,18 +80,22 @@ local plugins = {
     require("config.plugins.luasnips")
   },
 
-  {
-    require("config.plugins.completion")
-  },
+--  {
+--    require("config.plugins.completion")
+--  },
 
   {
     require("config.plugins.alpha")
   },
-
+  
   {
-    "neovim/nvim-lspconfig",
-    event = "BufReadPre",
+    require("config.plugins.obsidian"),
   },
+
+--  {
+--    "neovim/nvim-lspconfig",
+--    event = "BufReadPre",
+--  },
 }
 
 
