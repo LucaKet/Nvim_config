@@ -1,5 +1,5 @@
 return{
-    'MeanderingProgrammer/render-markdown.nvim',
+      'MeanderingProgrammer/render-markdown.nvim',
     dependencies = { 'nvim-treesitter/nvim-treesitter', 'nvim-mini/mini.icons'},
     opts = {
         render_modes = {'n'},
@@ -7,7 +7,7 @@ return{
         latex = {
           enabled = true,
           render_modes = {'n'},
-          converter = '/Users/luca/.local/bin/latex2text',
+         converter = '/Users/luca/.local/bin/latex2text',
           highlight = 'RenderMarkdownMath',
           position = 'center',
           top_pad = 0,

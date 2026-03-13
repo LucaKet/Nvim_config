@@ -42,11 +42,10 @@ local plugins = {
         -- vim.cmd.colorscheme("lackluster-mint")
 --    end, 
  -- },
- --other monochrome colorscheme
-  {
-    "kungfusheep/mfd.nvim"
-
-  },
+--other monochrome colorscheme
+ {
+   "kungfusheep/mfd.nvim"
+ },
 
   --telescope
   {
@@ -91,6 +90,13 @@ local plugins = {
   {
     require("config.plugins.obsidian"),
   },
+
+--  {
+--    require("config.plugins.live_markdown")
+-- },
+--  {
+--    require("config.plugins.markdown_preview")
+--  },
 
 --  {
 --    "neovim/nvim-lspconfig",
