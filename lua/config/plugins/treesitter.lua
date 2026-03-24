@@ -1,5 +1,6 @@
 return{
       "nvim-treesitter/nvim-treesitter",
+      prefer_git = true,
       lazy = false,
       build = ":TSUpdate",
       opts = {

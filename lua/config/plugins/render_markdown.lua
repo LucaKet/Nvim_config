@@ -3,17 +3,17 @@ return{
     dependencies = { 'nvim-treesitter/nvim-treesitter', 'nvim-mini/mini.icons'},
     opts = {
         render_modes = {'n'},
-        anti_conceal = {enabled = false},
+        anti_conceal = {enabled = True},
         latex = {
           enabled = true,
           render_modes = {'n'},
-         converter = '/Users/luca/.local/bin/latex2text',
+          converter = 'latex2text',
           highlight = 'RenderMarkdownMath',
           position = 'center',
           top_pad = 0,
           bottom_pad = 0,
         },
-        inline_value = {enabled = true,},
+        inline_value = {enabled = false,},
         heading = {
           sign = false,
           position = 'inline',
