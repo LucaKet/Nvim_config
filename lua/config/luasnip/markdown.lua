@@ -34,12 +34,9 @@ vim.list_extend(snipetts, {
         {trig = ";l", snippetType = "autosnippet", wordTrig = false},
         fmta(
           [[
-          <>
-          <>
           --------------------
-          <>
           ]],
-        {i(1), i(2), i(3)}
+        {}
             )
         ),
   }
