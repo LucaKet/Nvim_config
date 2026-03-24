@@ -59,3 +59,9 @@ require("config.keymaps")
 
 --cmp
 --require("config.cmp")
+--
+--transparency option
+vim.api.nvim_set_hl(0, 'Normal', { bg = 'none' })
+vim.api.nvim_set_hl(0, 'NormalFloat', { bg = 'none' })
+vim.api.nvim_set_hl(0, 'NormalNC', { bg = 'none' }) -- Non-current windows
+vim.api.nvim_set_hl(0, 'SignColumn', { bg = 'none' })

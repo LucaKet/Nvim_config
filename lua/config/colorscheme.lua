@@ -2,9 +2,9 @@
 --vim.cmd.colorscheme("kanagawa-wave")
 
 --tokyonight
---require("tokyonight").setup({
---  style = "moon",
---})
+require("tokyonight").setup({
+  style = "moon",
+})
 
 --vim.cmd("colorscheme tokyonight")
 
@@ -18,4 +18,4 @@
 
 --vim.cmd("colorscheme monochrome")
 
-vim.cmd("colorscheme mfd-flir")
+--vim.cmd("colorscheme mfd-flir")

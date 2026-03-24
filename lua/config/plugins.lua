@@ -25,11 +25,11 @@ local plugins = {
 --  },
 --
 --  tokyonight colorscheme
---  {
---    "folke/tokyonight.nvim",
---    lazy = false,
---    priority = 1000,
---  },
+  {
+    "folke/tokyonight.nvim",
+    lazy = false,
+    priority = 1000,
+  },
 --
 --  monochrome colorscheme
 --  {
@@ -43,9 +43,9 @@ local plugins = {
 --    end, 
  -- },
 --other monochrome colorscheme
- {
-   "kungfusheep/mfd.nvim"
- },
+-- {
+--   "kungfusheep/mfd.nvim"
+-- },
 
   --telescope
   {
