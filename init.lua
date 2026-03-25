@@ -1,4 +1,7 @@
 --OPZIONI
+--finding path across linux and mac
+vim.env.PATH = vim.env.PATH .. ':' .. vim.fn.expand('~/.local/bin')
+
 -- Leader key
 vim.g.mapleader = " "
 
