@@ -15,94 +15,41 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-------------------------------------------------------------------------- PLUGINS -----------------------------------------------------------
+------------------------- PLUGINS ---------------------------------
 
 local opts = {}
 local plugins = {
---kanagawa (colorscheme)
---  {
---    "rebelot/kanagawa.nvim"
---  },
---
---  tokyonight colorscheme
-  {
-    "folke/tokyonight.nvim",
-    lazy = false,
-    priority = 1000,
-  },
---
---  monochrome colorscheme
---  {
---  "slugbyte/lackluster.nvim",
---    lazy = false,
---    priority = 1000,
---    init = function()
---        vim.cmd.colorscheme("lackluster")
-        -- vim.cmd.colorscheme("lackluster-hack") -- my favorite
-        -- vim.cmd.colorscheme("lackluster-mint")
---    end, 
- -- },
---other monochrome colorscheme
--- {
---   "kungfusheep/mfd.nvim"
--- },
+
+  --color scheme
+  require("config.plugins.color_scheme"),
 
   --telescope
-  {
-      require("config.plugins.telescope")
-  },
+  require("config.plugins.telescope"),
 
   --mini lybrary
   { 'nvim-mini/mini.statusline', version = false, opts = {} }, 
   { 'nvim-mini/mini.icons', version = false, opts = {} },
  
   --Oil (file manager)
-  {
-    require("config.plugins.Oil")
-  },
+  require("config.plugins.Oil"),
 
   --tree-sitter
-  {
-    require("config.plugins.treesitter")
-  },
+  require("config.plugins.treesitter"),
 
   --render markdown
-  {
-   require("config.plugins.render_markdown")
-  },
-
-  {
-    require("config.plugins.vimtex")
-  },
-
-  {
-    require("config.plugins.luasnips")
-  },
-
---  {
---    require("config.plugins.completion")
---  },
-
-  {
-    require("config.plugins.alpha")
-  },
+  require("config.plugins.render_markdown"),
   
-  {
-    require("config.plugins.obsidian"),
-  },
+  -- vimtex
+  require("config.plugins.vimtex"),
+  
+  --luasnips
+  require("config.plugins.luasnips"),
 
---  {
---    require("config.plugins.live_markdown")
--- },
---  {
---    require("config.plugins.markdown_preview")
---  },
+  -- home page drawing
+  require("config.plugins.alpha"),
 
---  {
---    "neovim/nvim-lspconfig",
---    event = "BufReadPre",
---  },
+  -- VimWiki notes
+  require("config.plugins.VimWiki")
 }
-
 
 require("lazy").setup(plugins, opts)

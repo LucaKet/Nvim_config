@@ -48,21 +48,9 @@ vim.opt.conceallevel = 2
 --lazy e tutti i plug-in
 require("config.plugins")
 
---colorscheme
-require("config.colorscheme")
-
---telescope
-require("config.telescope")
-
 --key mappings
 require("config.keymaps")
 
---python LSP
---require("config.python")
-
---cmp
---require("config.cmp")
---
 --transparency option
 vim.api.nvim_set_hl(0, 'Normal', { bg = 'none' })
 vim.api.nvim_set_hl(0, 'NormalFloat', { bg = 'none' })

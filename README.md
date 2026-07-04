@@ -1,8 +1,10 @@
 # Personal NeoVim configuration
-used for:
 
+The config is extremely minimal, it is used for:
+
+ -txt files
  -python
  -Latex
  -Markdown
 
-**!Please note, this is only v1.0!**
+Warning: some parts of this config were implemented with the use of AI.
