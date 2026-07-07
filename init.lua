@@ -38,6 +38,9 @@ vim.opt.signcolumn = "yes"
 --numero minimo di righe che fa vedere sopra e sotto il cursore
 vim.opt.scrolloff = 8
 
+--cursorline globally highlighted
+vim.opt.cursorline = true
+
 --python provider
 vim.g.python3_host_prog = '/Users/luca/anaconda3/bin/python3'
 
