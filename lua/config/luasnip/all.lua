@@ -5,7 +5,7 @@ vim.list_extend(snipetts, {
         {trig = ";ref", snippetType = "autosnippet", wordTrig = false},
         fmta(
         [[
-        reference path: ~/Desktop/00main/00PHD/01lit/<>/<>
+        reference path: ~/Desktop/00main/<>
         @<>{
           <>,
           author = {<>},
@@ -14,7 +14,7 @@ vim.list_extend(snipetts, {
           journal= {<>},
         }
         ]],
-        {i(1), i(2), i(3), i(4), i(5), i(6), i(7), i(8)}
+        {i(1), i(2), i(3), i(4), i(5), i(6), i(7)}
         )
       ),
 
