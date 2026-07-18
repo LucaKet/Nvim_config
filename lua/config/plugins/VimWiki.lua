@@ -3,8 +3,8 @@ return {
   init = function()
     vim.g.vimwiki_keymaps = 0
     vim.keymap.set('n', '<leader>ww', '<cmd>VimwikiIndex<cr>')
-    vim.g.vimwiki_global_ext = 0
-    vim.g.vimwiki_autowriteall = 0
+    --vim.g.vimwiki_global_ext = 0
+    --vim.g.vimwiki_autowriteall = 0
     vim.g.vimwiki_table_auto_fmt = 0   
     vim.g.vimwiki_list = {
       {
@@ -31,7 +31,7 @@ return {
     -- 2. Strip syntax highlighting but keep wiki functionality
     vim.api.nvim_create_autocmd("BufWinEnter", {
       group = wiki_group,
-      pattern = "*/01notes/*.txt", -- Targets any .txt file inside your notes folder
+      pattern = "*/*.txt", -- Targets any .txt file
       callback = function()
         vim.bo.syntax = "text" -- Sets the visual syntax engine to plain text
       end,

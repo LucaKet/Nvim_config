@@ -1,10 +1,5 @@
 vim.keymap.set("n", "-", "<cmd>Oil<CR>")
 
---running python files using leader-r
-vim.keymap.set("n", "<leader>r", ":!python %<CR>", { desc = "Run Python file" })
-
-vim.keymap.set("n", "<leader>ob", ":ObsidianBacklinks", { desc = "shows backlinks for current file"})
-
 vim.cmd[[
 " Expand or jump in insert mode
 imap <silent><expr> <Tab> luasnip#expand_or_jumpable() ? '<Plug>luasnip-expand-or-jump' : '<Tab>' 
