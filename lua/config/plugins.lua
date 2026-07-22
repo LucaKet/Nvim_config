@@ -49,7 +49,7 @@ local plugins = {
   require("config.plugins.alpha"),
 
   -- VimWiki notes
-  require("config.plugins.VimWiki")
+  --require("config.plugins.VimWiki")
 }
 
 require("lazy").setup(plugins, opts)
