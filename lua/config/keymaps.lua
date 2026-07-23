@@ -12,9 +12,19 @@ imap <silent><expr> <S-Tab> luasnip#jumpable(-1) ? '<Plug>luasnip-jump-prev' : '
 smap <silent><expr> <S-Tab> luasnip#jumpable(-1) ? '<Plug>luasnip-jump-prev' : '<S-Tab>'
 ]]
 
+-- change quickly to monochrome colorscheme
+vim.cmd[[
+nnoremap <Leader>bb :colorscheme quiet<CR>
+]]
+-- back to colored
+vim.cmd[[
+nnoremap <Leader>nbb :colorscheme darkblue<CR>
+]]
+-- red colorbar at 80 character
 vim.cmd[[ 
 nnoremap <Leader>80 :set colorcolumn=80<CR> 
 ]]
+-- (make it disappear)
 vim.cmd[[ 
 nnoremap <Leader>n80 :set colorcolumn=-80<CR> 
 ]]

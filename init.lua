@@ -3,7 +3,7 @@
 vim.env.PATH = vim.env.PATH .. ':' .. vim.fn.expand('~/.local/bin')
 
 --set colorscheme (from their choices)
-vim.cmd [[colorscheme darkblue]]
+vim.cmd.colorscheme("darkblue")
 
 -- Leader key
 vim.g.mapleader = " "
