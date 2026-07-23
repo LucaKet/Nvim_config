@@ -2,6 +2,9 @@
 --finding path across linux and mac
 vim.env.PATH = vim.env.PATH .. ':' .. vim.fn.expand('~/.local/bin')
 
+--set colorscheme (from their choices)
+vim.cmd [[colorscheme darkblue]]
+
 -- Leader key
 vim.g.mapleader = " "
 
@@ -18,6 +21,9 @@ vim.opt.smarttab = true
 vim.opt.smartindent = true
 vim.opt.autoindent = true
 vim.opt.breakindent = true
+
+--statusbar
+vim.opt.laststatus = 0
 
 --mouse
 vim.opt.mouse = "a" 

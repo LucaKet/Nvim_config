@@ -11,3 +11,10 @@ smap <silent><expr> <Tab> luasnip#jumpable(1) ? '<Plug>luasnip-jump-next' : '<Ta
 imap <silent><expr> <S-Tab> luasnip#jumpable(-1) ? '<Plug>luasnip-jump-prev' : '<S-Tab>'
 smap <silent><expr> <S-Tab> luasnip#jumpable(-1) ? '<Plug>luasnip-jump-prev' : '<S-Tab>'
 ]]
+
+vim.cmd[[ 
+nnoremap <Leader>80 :set colorcolumn=80<CR> 
+]]
+vim.cmd[[ 
+nnoremap <Leader>n80 :set colorcolumn=-80<CR> 
+]]

@@ -20,8 +20,6 @@ vim.opt.rtp:prepend(lazypath)
 local opts = {}
 local plugins = {
 
-  --color scheme
-  require("config.plugins.color_scheme"),
 
   --telescope
   require("config.plugins.telescope"),
@@ -48,8 +46,6 @@ local plugins = {
   -- home page drawing
   require("config.plugins.alpha"),
 
-  -- VimWiki notes
-  --require("config.plugins.VimWiki")
 }
 
 require("lazy").setup(plugins, opts)
