@@ -46,6 +46,8 @@ local plugins = {
   -- home page drawing
   require("config.plugins.alpha"),
 
+  -- markdown 
+  require("config.plugins.meandering_markdown"),
 }
 
 require("lazy").setup(plugins, opts)
