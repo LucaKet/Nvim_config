@@ -34,9 +34,6 @@ local plugins = {
   --tree-sitter
   require("config.plugins.treesitter"),
 
-  --render markdown
-  require("config.plugins.render_markdown"),
-  
   -- vimtex
   require("config.plugins.vimtex"),
   
@@ -48,6 +45,9 @@ local plugins = {
 
   -- markdown 
   require("config.plugins.meandering_markdown"),
+
+  -- zen mode 
+  require("config.plugins.zen_mode"),
 }
 
 require("lazy").setup(plugins, opts)
