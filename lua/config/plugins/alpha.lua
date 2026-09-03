@@ -81,7 +81,6 @@ local function configure()
 
   themeconfig.layout[2] = header_color()
   themeconfig.layout[6] = buttons
-
   return themeconfig
 end
 
